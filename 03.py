@@ -1,8 +1,9 @@
-while True:
-    numero = int(input("Digite um número: "))
+n = int(input("Digite N: "))
 
-    if numero == 0:
-        print("Programa encerrado.")
-        break
+contador = 0
 
-    print("Você digitou:", numero)
+for numero in range(1, n + 1):
+    if numero % 2 == 0:
+        contador += 1
+
+print("Quantidade de números pares:", contador)
